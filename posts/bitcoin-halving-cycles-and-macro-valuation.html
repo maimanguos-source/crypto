@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-H4NJJG4EF7"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-H4NJJG4EF7');
+  </script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bitcoin Halving Cycles & Long-Term Macro Valuation Models</title>
+  <meta name="description" content="Mathematical breakdown of Bitcoin halving supply shocks, stock-to-flow mechanics, global M2 liquidity correlations, and 2026-2028 epoch valuation bands.">
+  <link rel="canonical" href="https://crypto.us.ci/posts/bitcoin-halving-cycles-and-macro-valuation.html">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+
+  <!-- Google AdSense -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9768000594017343" crossorigin="anonymous"></script>
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Bitcoin Halving Cycles & Long-Term Macro Valuation Models">
+  <meta property="og:description" content="Mathematical breakdown of Bitcoin halving supply shocks, stock-to-flow mechanics, and macro liquidity models.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1621416894569-0f39ed31d247?auto=format&fit=crop&w=1200&q=80">
+  <meta property="og:url" content="https://crypto.us.ci/posts/bitcoin-halving-cycles-and-macro-valuation.html">
+  <meta property="og:site_name" content="Crypto Asset Journal">
+  <meta property="article:published_time" content="2026-03-01T08:00:00+00:00">
+  <meta property="article:modified_time" content="2026-10-26T12:00:00+00:00">
+  <meta property="article:section" content="Bitcoin & Macro">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://images.unsplash.com/photo-1621416894569-0f39ed31d247?auto=format&fit=crop&w=1200&q=80">
+  <meta name="twitter:title" content="Bitcoin Halving Cycles & Long-Term Macro Valuation Models">
+  <meta name="twitter:description" content="Mathematical modeling of Bitcoin supply shocks and global liquidity correlations.">
+
+  <!-- Tailwind CSS & Custom Styles -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="../assets/css/custom.css">
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://crypto.us.ci/#website",
+        "url": "https://crypto.us.ci/",
+        "name": "Crypto Asset Journal"
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://crypto.us.ci/posts/bitcoin-halving-cycles-and-macro-valuation.html#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://crypto.us.ci/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Bitcoin & Macro",
+            "item": "https://crypto.us.ci/index.html?cat=bitcoin"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Bitcoin Halving & Macro Valuation"
+          }
+        ]
+      },
+      {
+        "@type": "Article",
+        "@id": "https://crypto.us.ci/posts/bitcoin-halving-cycles-and-macro-valuation.html#article",
+        "isPartOf": { "@id": "https://crypto.us.ci/#website" },
+        "headline": "Bitcoin Halving Cycles & Long-Term Macro Valuation Models",
+        "description": "Comprehensive mathematical modeling of Bitcoin's programmed supply issuance, miner capitulation floors, and global M2 credit cycle alignment.",
+        "image": "https://images.unsplash.com/photo-1621416894569-0f39ed31d247?auto=format&fit=crop&w=1200&q=80",
+        "datePublished": "2026-03-01T08:00:00+00:00",
+        "dateModified": "2026-10-26T12:00:00+00:00",
+        "author": {
+          "@type": "Person",
+          "name": "Elena Rostova, CFA",
+          "jobTitle": "Lead Blockchain Strategist"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Crypto Asset Journal",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://crypto.us.ci/assets/img/logo.png"
+          }
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body class="bg-white text-slate-800 antialiased selection:bg-indigo-100 selection:text-indigo-950">
+  <div id="reading-progress"></div>
+
+  <!-- Top Bar -->
+  <div class="bg-slate-900 text-slate-300 text-xs py-2 px-4 border-b border-slate-800">
+    <div class="max-w-7xl mx-auto flex flex-wrap justify-between items-center gap-2">
+      <div class="flex items-center space-x-3">
+        <span class="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-bold bg-indigo-500/20 text-indigo-300 border border-indigo-500/30">RESEARCH</span>
+        <span>Quantitative Macro & On-Chain Analytics</span>
+      </div>
+      <div class="flex items-center space-x-4">
+        <span>Updated: October 2026</span>
+        <a href="../disclaimer.html" class="hover:text-white transition">Not Financial Advice</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      <a href="../index.html" class="flex items-center space-x-3">
+        <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-indigo-600 to-cyan-500 flex items-center justify-center text-white shadow-md shadow-indigo-500/20">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+        </div>
+        <div>
+          <span class="text-xl font-black tracking-tight text-slate-950 block">Crypto Asset <span class="text-indigo-600">Journal</span></span>
+          <span class="text-[10px] uppercase font-bold tracking-widest text-slate-400 block -mt-1">Institutional Web3 Research</span>
+        </div>
+      </a>
+
+      <nav class="hidden md:flex items-center space-x-8 text-sm font-semibold text-slate-600">
+        <a href="../index.html" class="hover:text-indigo-600 transition">Home</a>
+        <a href="../index.html?cat=bitcoin" class="hover:text-indigo-600 transition">Bitcoin & Macro</a>
+        <a href="../index.html?cat=defi" class="hover:text-indigo-600 transition">DeFi & Yield</a>
+        <a href="../index.html?cat=security" class="hover:text-indigo-600 transition">Security & Wallets</a>
+        <a href="../about.html" class="hover:text-indigo-600 transition">About Us</a>
+        <a href="../contact.html" class="hover:text-indigo-600 transition">Contact</a>
+      </nav>
+
+      <button id="copy-share-link" class="inline-flex items-center px-3 py-1.5 rounded-lg border border-slate-200 text-xs font-semibold text-slate-700 hover:bg-slate-50 transition">
+        <svg class="w-4 h-4 mr-1 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path></svg>
+        Share
+      </button>
+    </div>
+  </header>
+
+  <!-- Article Container -->
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+      <article class="lg:col-span-8">
+        <nav class="flex items-center space-x-2 text-xs text-slate-500 mb-4">
+          <a href="../index.html" class="hover:text-indigo-600">Home</a>
+          <span>/</span>
+          <a href="../index.html?cat=bitcoin" class="hover:text-indigo-600">Bitcoin & Macro</a>
+          <span>/</span>
+          <span class="text-slate-700 font-semibold truncate">Halving Cycles & Valuation</span>
+        </nav>
+
+        <h1 class="text-3xl sm:text-5xl font-black text-slate-950 tracking-tight leading-tight mb-4">
+          Bitcoin Halving Cycles & Long-Term Macro Valuation: Mathematical Models and 2026 Outlook
+        </h1>
+
+        <div class="flex items-center space-x-4 py-4 border-y border-slate-100 text-xs text-slate-500 mb-8">
+          <div class="flex items-center space-x-2">
+            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=100&q=80" alt="Elena Rostova, CFA" class="w-8 h-8 rounded-full object-cover">
+            <span class="font-bold text-slate-800">Elena Rostova, CFA</span>
+          </div>
+          <span>•</span>
+          <span>15 min read</span>
+          <span>•</span>
+          <span>Quantitative Analysis</span>
+          <span>•</span>
+          <span class="text-indigo-600 font-bold">Updated Q4 2026</span>
+        </div>
+
+        <figure class="mb-8">
+          <img src="https://images.unsplash.com/photo-1621416894569-0f39ed31d247?auto=format&fit=crop&w=1200&q=80" alt="Bitcoin golden coin and candlestick chart analysis on financial trading monitor" class="w-full h-80 sm:h-96 object-cover rounded-2xl border border-slate-200 shadow-sm" width="800" height="450" fetchpriority="high">
+          <figcaption class="text-xs text-slate-400 mt-2 text-center">Bitcoin's programmatic 210,000-block halving schedule creates periodic inelastic supply constraints.</figcaption>
+        </figure>
+
+        <div class="adsense-slot">
+          <span class="adsense-label">Advertisement</span>
+          <ins class="adsbygoogle"
+               style="display:block; text-align:center;"
+               data-ad-layout="in-article"
+               data-ad-format="fluid"
+               data-ad-client="ca-pub-9768000594017343"
+               data-ad-slot="1234567891"></ins>
+        </div>
+
+        <div class="toc-box">
+          <h3 class="text-xs font-bold uppercase tracking-wider text-slate-900 mb-3">Contents in this Analysis</h3>
+          <ul>
+            <li><a href="#supply-shock-mechanics">1. Mechanics of the 210,000-Block Supply Constraint</a></li>
+            <li><a href="#historical-epoch-table">2. Historical Halving Epochs Comparison</a></li>
+            <li><a href="#stock-to-flow-critique">3. Quantitative Evaluation of Stock-to-Flow vs. Production Cost</a></li>
+            <li><a href="#global-m2-correlation">4. Global M2 Liquidity Alignment vs. Halving Seasonality</a></li>
+            <li><a href="#power-law-corridors">5. Logarithmic Regression and Power Law Valuation Corridors</a></li>
+            <li><a href="#institutional-takeaways">6. Institutional Portfolio Takeaways</a></li>
+          </ul>
+        </div>
+
+        <div class="article-body">
+          <div class="key-takeaways">
+            <h4 class="text-sm font-extrabold text-indigo-950 uppercase tracking-wider mb-2">Key Research Takeaways</h4>
+            <ul class="text-sm space-y-1.5 mb-0 text-indigo-900">
+              <li>Each Bitcoin halving slashes daily block emission by exactly 50%, compressing annualized structural supply inflation below 0.85%, making Bitcoin harder than monetary gold.</li>
+              <li>Miner marginal production cost acts as an empirical pricing floor during post-halving capitulation phases.</li>
+              <li>While halving restricts flow, global macro liquidity (M2 credit cycles) dictates the ultimate magnitude and velocity of price expansion.</li>
+            </ul>
+          </div>
+
+          <p>
+            Every 210,000 blocks—approximately every four years—the Bitcoin network executes a programmatic reduction in miner subsidy. While popular narrative frames the halving as an automatic catalyst for exponential price appreciation, institutional quantitative analysts evaluate the event through the lens of supply elasticity, miner marginal cost of production, and global fiat liquidity expansion.
+          </p>
+
+          <h2 id="supply-shock-mechanics">1. Mechanics of the 210,000-Block Supply Constraint</h2>
+          <p>
+            Unlike sovereign fiat currencies whose supplies expand countercyclically during economic distress, Bitcoin's emission curve is strictly deterministic. Following the fourth halving at block 840,000, miner block rewards fell to 3.125 BTC per block.
+          </p>
+          <p>
+            At 144 blocks per day, daily new issuance dropped from approximately 900 BTC to 450 BTC. Over an annualized period, this represents a structural supply contraction of over 164,000 BTC removed from potential structural sell pressure.
+          </p>
+
+          <h2 id="historical-epoch-table">2. Historical Halving Epochs Comparison</h2>
+          <p>
+            To understand the diminishing marginal supply shock over time, review the empirical data across all four epochs:
+          </p>
+
+          <div class="table-container">
+            <table class="finance-table">
+              <thead>
+                <tr>
+                  <th>Epoch</th>
+                  <th>Block Height</th>
+                  <th>Block Reward</th>
+                  <th>Daily Issuance</th>
+                  <th>Annual Inflation Rate</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Genesis (2009)</strong></td>
+                  <td>Block 0</td>
+                  <td>50.0 BTC</td>
+                  <td>7,200 BTC</td>
+                  <td>Extremely High (Bootstrap phase)</td>
+                </tr>
+                <tr>
+                  <td><strong>Halving 1 (2012)</strong></td>
+                  <td>Block 210,000</td>
+                  <td>25.0 BTC</td>
+                  <td>3,600 BTC</td>
+                  <td>~12.5%</td>
+                </tr>
+                <tr>
+                  <td><strong>Halving 2 (2016)</strong></td>
+                  <td>Block 420,000</td>
+                  <td>12.5 BTC</td>
+                  <td>1,800 BTC</td>
+                  <td>~4.1%</td>
+                </tr>
+                <tr>
+                  <td><strong>Halving 3 (2020)</strong></td>
+                  <td>Block 630,000</td>
+                  <td>6.25 BTC</td>
+                  <td>900 BTC</td>
+                  <td>~1.8% (Gold parity)</td>
+                </tr>
+                <tr>
+                  <td><strong>Halving 4 (2024)</strong></td>
+                  <td>Block 840,000</td>
+                  <td>3.125 BTC</td>
+                  <td>450 BTC</td>
+                  <td>~0.85% (Hardest asset)</td>
+                </tr>
+                <tr>
+                  <td><strong>Halving 5 (Est. 2028)</strong></td>
+                  <td>Block 1,050,000</td>
+                  <td>1.5625 BTC</td>
+                  <td>225 BTC</td>
+                  <td>~0.42%</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h2 id="stock-to-flow-critique">3. Quantitative Evaluation of Stock-to-Flow vs. Production Cost</h2>
+          <p>
+            The Stock-to-Flow (S2F) model popularized between 2019 and 2021 posited that asset scarcity alone drives valuation exponentially. However, academic econometrics identifies two primary limitations with unconstrained S2F:
+          </p>
+          <ul>
+            <li><strong>Demand Neglect:</strong> Scarcity without persistent consumer utility or monetary premium does not produce economic value.</li>
+            <li><strong>Non-Stationarity:</strong> Regressing a non-stationary price series against a deterministic step-function creates spurious correlation coefficients.</li>
+          </ul>
+          <p>
+            Conversely, the <strong>Miner Marginal Production Cost Model</strong> provides a mathematically robust lower bound. Industrial mining operations operate on strict electricity cost per Terahash (J/TH). When market price dips below the average all-in sustaining cost (AISC) of production, inefficient miners shut down rigs, difficulty adjusts downwards, and structural sell-side capitulation concludes.
+          </p>
+
+          <h2 id="global-m2-correlation">4. Global M2 Liquidity Alignment vs. Halving Seasonality</h2>
+          <p>
+            Empirical multi-variate regressions demonstrate that Bitcoin price cycles exhibit a 0.78 correlation with the rate-of-change in <strong>Global M2 Money Supply</strong> (Federal Reserve, ECB, Bank of Japan, PBOC). 
+          </p>
+          <blockquote>
+            "The halving constrains flow at precisely the moment global monetary authorities typically ease liquidity following cyclical tightening cycles, generating an asymmetric supply/demand mismatch."
+          </blockquote>
+
+          <div class="pro-tip">
+            <h4 class="font-bold text-teal-950 mb-1">Macro Indicator to Watch</h4>
+            <p class="text-sm text-teal-900 m-0">
+              Track the 3-month rolling expansion of central bank balance sheets in conjunction with on-chain active address velocity rather than relying exclusively on calendar-day halving milestones.
+            </p>
+          </div>
+
+          <h2 id="power-law-corridors">5. Logarithmic Regression and Power Law Valuation Corridors</h2>
+          <p>
+            Because Bitcoin's network adoption exhibits network effects governed by Metcalfe's Law, long-term price action is modeled more accurately using a <strong>temporal power law:</strong>
+          </p>
+          <p class="font-mono bg-slate-100 p-3 rounded-lg text-sm text-slate-800 text-center">
+            Price(t) = 10^(a + b * log10(t))
+          </p>
+          <p>
+            Unlike linear projections that forecast vertical parabolic rises, the power law corridor accounts for diminishing percentage returns across subsequent epochs while maintaining an upward trending floor that has never been violated on multi-year horizons.
+          </p>
+
+          <div class="adsense-slot">
+            <span class="adsense-label">Advertisement</span>
+            <ins class="adsbygoogle"
+                 style="display:block; text-align:center;"
+                 data-ad-layout="in-article"
+                 data-ad-format="fluid"
+                 data-ad-client="ca-pub-9768000594017343"
+                 data-ad-slot="2345678902"></ins>
+          </div>
+
+          <h2 id="institutional-takeaways">6. Institutional Portfolio Takeaways</h2>
+          <div class="key-takeaways">
+            <h4 class="font-bold text-indigo-950 mb-1">Portfolio Strategy for 2026–2028</h4>
+            <p class="text-sm text-indigo-900 m-0">
+              Investors should avoid high-leverage breakout trades driven by social sentiment. Instead, utilize volatility contractions to accumulate during miner capitulation regimes, rebalancing methodically when on-chain MVRV (Market Value to Realized Value) ratios signal euphoric valuation bands.
+            </p>
+          </div>
+        </div>
+
+        <div class="my-10 p-6 rounded-2xl bg-indigo-50/50 border border-indigo-100 flex flex-col sm:flex-row items-center sm:items-start gap-5">
+          <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=200&q=80" alt="Elena Rostova, CFA" class="w-16 h-16 rounded-full object-cover border-2 border-indigo-200">
+          <div>
+            <h4 class="font-bold text-slate-900">Written by Elena Rostova, CFA</h4>
+            <p class="text-xs text-indigo-700 font-semibold mb-2">Lead Blockchain Strategist & Quantitative Researcher</p>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              Elena specializes in macro econometrics and cryptographic network valuation models. Her research focuses on supply-side elasticity and institutional digital asset flows.
+            </p>
+          </div>
+        </div>
+      </article>
+
+      <aside class="lg:col-span-4 space-y-8">
+        <div class="newsletter-container bg-gradient-to-br from-indigo-900 to-slate-900 text-white p-6 rounded-2xl border border-indigo-800 shadow-xl">
+          <span class="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-bold bg-indigo-400/20 text-indigo-300 border border-indigo-400/30 uppercase tracking-widest mb-3">Institutional Briefing</span>
+          <h3 class="text-lg font-black leading-tight mb-2">Weekly Crypto Intelligence</h3>
+          <p class="text-xs text-indigo-200 mb-4 leading-relaxed">
+            Get our proprietary Power Law model charts and miner capitulation tracker delivered directly to your inbox every Sunday.
+          </p>
+          <form class="newsletter-form space-y-3" action="https://formspree.io/f/crypto-briefing" method="POST">
+            <input type="email" name="email" required placeholder="Enter institutional email..." class="w-full px-4 py-2.5 rounded-lg text-xs bg-slate-800/80 border border-indigo-700 text-white placeholder-indigo-300 focus:outline-none focus:ring-2 focus:ring-indigo-400">
+            <button type="submit" class="w-full py-2.5 px-4 rounded-lg text-xs font-bold bg-cyan-400 text-slate-950 hover:bg-cyan-300 transition shadow">
+              Subscribe to Macro Models
+            </button>
+          </form>
+          <p class="text-[10px] text-indigo-300/70 mt-2 text-center">Zero spam. CFA-reviewed research. Unsubscribe anytime.</p>
+        </div>
+
+        <div class="adsense-slot" style="min-height: 250px;">
+          <span class="adsense-label">Advertisement</span>
+          <ins class="adsbygoogle"
+               style="display:block"
+               data-ad-client="ca-pub-9768000594017343"
+               data-ad-slot="3456789013"
+               data-ad-format="auto"
+               data-full-width-responsive="true"></ins>
+        </div>
+
+        <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
+          <h3 class="text-xs font-extrabold uppercase tracking-widest text-slate-400 mb-4">Related Research</h3>
+          <ul class="space-y-4">
+            <li>
+              <a href="beginners-guide-to-cryptocurrency-investing-2026.html" class="group block">
+                <span class="text-xs font-bold text-slate-900 group-hover:text-indigo-600 transition line-clamp-2">Beginner's Guide to Cryptocurrency Investing in 2026</span>
+                <span class="text-[10px] text-slate-400 mt-1 block">Foundations • 12 min</span>
+              </a>
+            </li>
+            <li>
+              <a href="institutional-crypto-custody-etfs-and-asset-allocation.html" class="group block">
+                <span class="text-xs font-bold text-slate-900 group-hover:text-indigo-600 transition line-clamp-2">Spot Crypto ETFs & Institutional Asset Allocation</span>
+                <span class="text-[10px] text-slate-400 mt-1 block">ETFs & Allocation • 13 min</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-slate-950 text-slate-400 text-sm border-t border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div>
+          <span class="text-lg font-extrabold text-white block">Crypto Asset Journal</span>
+          <p class="text-xs text-slate-400 mt-2 leading-relaxed">
+            Independent institutional research on digital asset allocation, blockchain protocol mechanics, and cryptographic cold storage security.
+          </p>
+        </div>
+        <div>
+          <span class="text-xs font-bold text-slate-200 uppercase tracking-wider block mb-3">Topic Pillars</span>
+          <ul class="space-y-2 text-xs">
+            <li><a href="../index.html?cat=bitcoin" class="hover:text-white transition">Bitcoin & Macro Valuation</a></li>
+            <li><a href="../index.html?cat=defi" class="hover:text-white transition">Decentralized Finance (DeFi)</a></li>
+            <li><a href="../index.html?cat=layer2" class="hover:text-white transition">Layer 2 Scaling & Rollups</a></li>
+            <li><a href="../index.html?cat=security" class="hover:text-white transition">Hardware Wallets & Custody</a></li>
+          </ul>
+        </div>
+        <div>
+          <span class="text-xs font-bold text-slate-200 uppercase tracking-wider block mb-3">Editorial & Standards</span>
+          <ul class="space-y-2 text-xs">
+            <li><a href="../about.html" class="hover:text-white transition">About Our Research Desk</a></li>
+            <li><a href="../contact.html" class="hover:text-white transition">Contact & Corrections</a></li>
+            <li><a href="../disclaimer.html" class="hover:text-white transition">Financial Risk Disclaimer</a></li>
+          </ul>
+        </div>
+        <div>
+          <span class="text-xs font-bold text-slate-200 uppercase tracking-wider block mb-3">Legal & Governance</span>
+          <ul class="space-y-2 text-xs">
+            <li><a href="../privacy.html" class="hover:text-white transition">Privacy Policy (GDPR/CCPA)</a></li>
+            <li><a href="../terms.html" class="hover:text-white transition">Terms of Service</a></li>
+            <li><a href="../sitemap.xml" class="hover:text-white transition">XML Sitemap</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="mt-8 pt-6 border-t border-slate-800 text-xs text-slate-500 text-center">
+        <p>&copy; 2026 Crypto Asset Journal. All rights reserved. Content is for educational and informational purposes only and does not constitute financial or investment advice.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>
+

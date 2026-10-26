@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-H4NJJG4EF7"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-H4NJJG4EF7');
+  </script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cryptocurrency Taxation Guide: Capital Gains & Cost-Basis</title>
+  <meta name="description" content="Institutional guide to crypto tax compliance in 2026: IRS rules, FIFO vs HIFO cost-basis accounting, staking income, wash sales, and tax-loss harvesting.">
+  <link rel="canonical" href="https://crypto.us.ci/posts/crypto-taxation-and-cost-basis-reporting-guide.html">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+
+  <!-- Google AdSense -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9768000594017343" crossorigin="anonymous"></script>
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Cryptocurrency Taxation Guide: Capital Gains & Cost-Basis">
+  <meta property="og:description" content="Institutional crypto tax guide: IRS compliance, FIFO/HIFO methods, staking rewards, and tax-loss harvesting.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=1200&q=80">
+  <meta property="og:url" content="https://crypto.us.ci/posts/crypto-taxation-and-cost-basis-reporting-guide.html">
+  <meta property="og:site_name" content="Crypto Asset Journal">
+  <meta property="article:published_time" content="2026-05-02T08:00:00+00:00">
+  <meta property="article:modified_time" content="2026-10-26T12:00:00+00:00">
+  <meta property="article:section" content="Regulation & Tax">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=1200&q=80">
+  <meta name="twitter:title" content="Cryptocurrency Taxation Guide: Capital Gains & Cost-Basis">
+  <meta name="twitter:description" content="Complete institutional guide to cryptocurrency taxation and reporting.">
+
+  <!-- Tailwind CSS & Custom Styles -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="../assets/css/custom.css">
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://crypto.us.ci/#website",
+        "url": "https://crypto.us.ci/",
+        "name": "Crypto Asset Journal"
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://crypto.us.ci/posts/crypto-taxation-and-cost-basis-reporting-guide.html#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://crypto.us.ci/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Regulation & Tax",
+            "item": "https://crypto.us.ci/index.html?cat=regulation"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Crypto Taxation Guide"
+          }
+        ]
+      },
+      {
+        "@type": "Article",
+        "@id": "https://crypto.us.ci/posts/crypto-taxation-and-cost-basis-reporting-guide.html#article",
+        "isPartOf": { "@id": "https://crypto.us.ci/#website" },
+        "headline": "Cryptocurrency Taxation Guide: Capital Gains, Staking Rewards, and Cost-Basis Accounting",
+        "description": "Comprehensive institutional guide to digital asset taxation, cost basis optimization, staking income, and tax-loss harvesting rules.",
+        "image": "https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=1200&q=80",
+        "datePublished": "2026-05-02T08:00:00+00:00",
+        "dateModified": "2026-10-26T12:00:00+00:00",
+        "author": {
+          "@type": "Person",
+          "name": "Elena Rostova, CFA",
+          "jobTitle": "Lead Blockchain Strategist"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Crypto Asset Journal",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://crypto.us.ci/assets/img/logo.png"
+          }
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body class="bg-white text-slate-800 antialiased selection:bg-indigo-100 selection:text-indigo-950">
+  <div id="reading-progress"></div>
+
+  <!-- Top Bar -->
+  <div class="bg-slate-900 text-slate-300 text-xs py-2 px-4 border-b border-slate-800">
+    <div class="max-w-7xl mx-auto flex flex-wrap justify-between items-center gap-2">
+      <div class="flex items-center space-x-3">
+        <span class="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-bold bg-indigo-500/20 text-indigo-300 border border-indigo-500/30">TAX & AUDIT</span>
+        <span>Cryptographic Asset Compliance & Cost-Basis Accounting</span>
+      </div>
+      <div class="flex items-center space-x-4">
+        <span>Updated: October 2026</span>
+        <a href="../disclaimer.html" class="hover:text-white transition">Not Tax Advice</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      <a href="../index.html" class="flex items-center space-x-3">
+        <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-indigo-600 to-cyan-500 flex items-center justify-center text-white shadow-md shadow-indigo-500/20">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+        </div>
+        <div>
+          <span class="text-xl font-black tracking-tight text-slate-950 block">Crypto Asset <span class="text-indigo-600">Journal</span></span>
+          <span class="text-[10px] uppercase font-bold tracking-widest text-slate-400 block -mt-1">Institutional Web3 Research</span>
+        </div>
+      </a>
+
+      <nav class="hidden md:flex items-center space-x-8 text-sm font-semibold text-slate-600">
+        <a href="../index.html" class="hover:text-indigo-600 transition">Home</a>
+        <a href="../index.html?cat=bitcoin" class="hover:text-indigo-600 transition">Bitcoin & Macro</a>
+        <a href="../index.html?cat=defi" class="hover:text-indigo-600 transition">DeFi & Yield</a>
+        <a href="../index.html?cat=security" class="hover:text-indigo-600 transition">Security & Wallets</a>
+        <a href="../about.html" class="hover:text-indigo-600 transition">About Us</a>
+        <a href="../contact.html" class="hover:text-indigo-600 transition">Contact</a>
+      </nav>
+
+      <button id="copy-share-link" class="inline-flex items-center px-3 py-1.5 rounded-lg border border-slate-200 text-xs font-semibold text-slate-700 hover:bg-slate-50 transition">
+        <svg class="w-4 h-4 mr-1 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path></svg>
+        Share
+      </button>
+    </div>
+  </header>
+
+  <!-- Article Container -->
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+      <article class="lg:col-span-8">
+        <nav class="flex items-center space-x-2 text-xs text-slate-500 mb-4">
+          <a href="../index.html" class="hover:text-indigo-600">Home</a>
+          <span>/</span>
+          <a href="../index.html?cat=regulation" class="hover:text-indigo-600">Regulation & Tax</a>
+          <span>/</span>
+          <span class="text-slate-700 font-semibold truncate">Crypto Taxation Guide</span>
+        </nav>
+
+        <h1 class="text-3xl sm:text-5xl font-black text-slate-950 tracking-tight leading-tight mb-4">
+          Cryptocurrency Taxation Guide: Capital Gains, Staking Rewards, and Cost-Basis Accounting
+        </h1>
+
+        <div class="flex items-center space-x-4 py-4 border-y border-slate-100 text-xs text-slate-500 mb-8">
+          <div class="flex items-center space-x-2">
+            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=100&q=80" alt="Elena Rostova, CFA" class="w-8 h-8 rounded-full object-cover">
+            <span class="font-bold text-slate-800">Elena Rostova, CFA</span>
+          </div>
+          <span>•</span>
+          <span>14 min read</span>
+          <span>•</span>
+          <span>Tax Accounting</span>
+          <span>•</span>
+          <span class="text-indigo-600 font-bold">Updated Q4 2026</span>
+        </div>
+
+        <figure class="mb-8">
+          <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=1200&q=80" alt="Financial tax forms, calculator, and cryptocurrency portfolio accounting spreadsheet" class="w-full h-80 sm:h-96 object-cover rounded-2xl border border-slate-200 shadow-sm" width="800" height="450" fetchpriority="high">
+          <figcaption class="text-xs text-slate-400 mt-2 text-center">Tax authorities classify cryptocurrency as property, making every disposal and trade a taxable realization event.</figcaption>
+        </figure>
+
+        <div class="adsense-slot">
+          <span class="adsense-label">Advertisement</span>
+          <ins class="adsbygoogle"
+               style="display:block; text-align:center;"
+               data-ad-layout="in-article"
+               data-ad-format="fluid"
+               data-ad-client="ca-pub-9768000594017343"
+               data-ad-slot="1234567896"></ins>
+        </div>
+
+        <div class="toc-box">
+          <h3 class="text-xs font-bold uppercase tracking-wider text-slate-900 mb-3">Contents in this Tax Blueprint</h3>
+          <ul>
+            <li><a href="#property-classification">1. The Core Paradigm: Property vs. Currency Classification</a></li>
+            <li><a href="#taxable-events">2. What Constitutes a Taxable Disposal Event?</a></li>
+            <li><a href="#cost-basis-methods">3. Cost-Basis Accounting: FIFO vs. LIFO vs. Specific ID (HIFO)</a></li>
+            <li><a href="#staking-and-airdrops">4. Staking Rewards, Airdrops, and Hard Forks</a></li>
+            <li><a href="#defi-taxation">5. DeFi Nuances: LP Tokens, Wrapping, and Cross-Chain Bridges</a></li>
+            <li><a href="#tax-loss-harvesting">6. Tax-Loss Harvesting and Wash Sale Regulations</a></li>
+          </ul>
+        </div>
+
+        <div class="article-body">
+          <div class="key-takeaways">
+            <h4 class="text-sm font-extrabold text-indigo-950 uppercase tracking-wider mb-2">Key Tax Takeaways for 2026</h4>
+            <ul class="text-sm space-y-1.5 mb-0 text-indigo-900">
+              <li>In the United States (IRS Notice 2014-21) and major OECD economies, cryptocurrencies are classified as <strong>property</strong>, not foreign currency.</li>
+              <li>Trading one crypto asset for another (e.g., swapping BTC for ETH on Uniswap) is a taxable capital gains realization event, not a tax-deferred exchange.</li>
+              <li>Utilizing Specific Identification / HIFO (Highest-In, First-Out) can substantially reduce taxable capital gains compared to default FIFO accounting.</li>
+            </ul>
+          </div>
+
+          <p>
+            As institutional compliance frameworks mature and brokers distribute standardized Form 1099-DA reporting documents, maintaining automated, auditable transaction ledgers is essential. Misunderstanding the difference between ordinary income and capital gains can trigger severe statutory penalties.
+          </p>
+
+          <h2 id="property-classification">1. The Core Paradigm: Property vs. Currency Classification</h2>
+          <p>
+            Because tax authorities treat crypto as property:
+          </p>
+          <ul>
+            <li>Every transfer of digital assets in exchange for goods, services, fiat currency, or other digital assets triggers capital gain or loss calculation: <code>Gain/Loss = Fair Market Value (FMV) - Cost Basis</code>.</li>
+            <li>Assets held for &le; 1 year are taxed at ordinary income rates (up to 37% federal in the US).</li>
+            <li>Assets held for &gt; 1 year qualify for preferential long-term capital gains tax brackets (0%, 15%, or 20%).</li>
+          </ul>
+
+          <h2 id="taxable-events">2. What Constitutes a Taxable Disposal Event?</h2>
+          <div class="grid sm:grid-cols-2 gap-4 my-6">
+            <div class="p-4 rounded-xl bg-red-50 border border-red-200">
+              <h4 class="font-bold text-red-950 mb-1">Taxable Events</h4>
+              <ul class="text-xs text-red-900 space-y-1 pl-4 list-disc">
+                <li>Selling crypto for fiat (USD, EUR).</li>
+                <li>Trading crypto for another token (ETH &rarr; SOL).</li>
+                <li>Spending crypto to buy physical goods or services.</li>
+                <li>Receiving staking yields, mining rewards, or airdrops.</li>
+              </ul>
+            </div>
+            <div class="p-4 rounded-xl bg-emerald-50 border border-emerald-200">
+              <h4 class="font-bold text-emerald-950 mb-1">Non-Taxable Events</h4>
+              <ul class="text-xs text-emerald-900 space-y-1 pl-4 list-disc">
+                <li>Purchasing cryptocurrency with fiat cash.</li>
+                <li>Transferring assets between your own wallets (self-transfer).</li>
+                <li>Creating a cold storage paper or metal backup.</li>
+                <li>Donating crypto directly to a 501(c)(3) charity.</li>
+              </ul>
+            </div>
+          </div>
+
+          <h2 id="cost-basis-methods">3. Cost-Basis Accounting: FIFO vs. LIFO vs. Specific ID (HIFO)</h2>
+          <p>
+            Your cost-basis calculation method dictates which tax lot is sold first. Comparing methods reveals dramatic differences in tax liability:
+          </p>
+
+          <div class="table-container">
+            <table class="finance-table">
+              <thead>
+                <tr>
+                  <th>Method</th>
+                  <th>Mechanism</th>
+                  <th>Primary Advantage</th>
+                  <th>Audit Requirement</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>FIFO (First-In, First-Out)</strong></td>
+                  <td>Oldest acquired coins are liquidated first.</td>
+                  <td>Default IRS assumption; simplest to compute.</td>
+                  <td>Standard ledger records.</td>
+                </tr>
+                <tr>
+                  <td><strong>LIFO (Last-In, First-Out)</strong></td>
+                  <td>Most recently purchased coins sold first.</td>
+                  <td>Useful during late-stage bull market tops.</td>
+                  <td>Requires consistent method application.</td>
+                </tr>
+                <tr>
+                  <td><strong>HIFO (Highest-In, First-Out)</strong></td>
+                  <td>Coins bought at the highest price sold first.</td>
+                  <td><strong>Minimizes capital gains</strong> and maximizes deductible losses.</td>
+                  <td>Requires specific lot identification (TX hash, time, wallet).</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h2 id="staking-and-airdrops">4. Staking Rewards, Airdrops, and Hard Forks</h2>
+          <p>
+            Staking rewards are not taxed as capital gains when received. Under current IRS guidelines (Revenue Ruling 2023-14), rewards are classified as <strong>ordinary income</strong> at the fair market value of the token on the date the taxpayer exercises dominion and control (unbonding/claiming).
+          </p>
+          <p>
+            That fair market value subsequently establishes the acquisition cost basis for when the tokens are eventually sold in the future.
+          </p>
+
+          <div class="warning-callout">
+            <h4 class="font-bold text-amber-950 mb-1">The Staking Tax Trap</h4>
+            <p class="text-sm text-amber-900 m-0">
+              If you receive $10,000 worth of staking rewards during market peaks, you owe income tax on that $10,000 even if the asset subsequently plummets 80% before tax filing season. Disciplined stakers sell a percentage of rewards immediately to reserve fiat for tax liabilities.
+            </p>
+          </div>
+
+          <h2 id="defi-taxation">5. DeFi Nuances: LP Tokens, Wrapping, and Cross-Chain Bridges</h2>
+          <p>
+            Interacting with smart contracts introduces technical classification nuances:
+          </p>
+          <ul>
+            <li><strong>Wrapping Tokens (e.g., ETH to WETH):</strong> Generally considered a non-taxable technical exchange of economic identicals, provided no value realization occurs.</li>
+            <li><strong>Liquidity Pool Tokens:</strong> Depositing ETH and USDC to receive an LP token is aggressively treated by conservative accountants as a disposal of ETH/USDC in exchange for a new property asset (the LP token).</li>
+          </ul>
+
+          <div class="adsense-slot">
+            <span class="adsense-label">Advertisement</span>
+            <ins class="adsbygoogle"
+                 style="display:block; text-align:center;"
+                 data-ad-layout="in-article"
+                 data-ad-format="fluid"
+                 data-ad-client="ca-pub-9768000594017343"
+                 data-ad-slot="2345678906"></ins>
+          </div>
+
+          <h2 id="tax-loss-harvesting">6. Tax-Loss Harvesting and Wash Sale Regulations</h2>
+          <p>
+            In traditional securities, the Wash Sale Rule disallows tax deductions if you repurchase a stock within 30 days of selling it at a loss. In digital assets, investors should carefully track evolving legislative updates regarding economic substance doctrines:
+          </p>
+          <div class="pro-tip">
+            <h4 class="font-bold text-teal-950 mb-1">Tax-Loss Harvesting Strategy</h4>
+            <p class="text-sm text-teal-900 m-0">
+              Selling underwater positions enables offsetting up to $3,000 of ordinary income annually in addition to offsetting unlimited capital gains. Consult a CPA regarding current jurisdictional statutory windows.
+            </p>
+          </div>
+        </div>
+
+        <div class="my-10 p-6 rounded-2xl bg-indigo-50/50 border border-indigo-100 flex flex-col sm:flex-row items-center sm:items-start gap-5">
+          <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=200&q=80" alt="Elena Rostova, CFA" class="w-16 h-16 rounded-full object-cover border-2 border-indigo-200">
+          <div>
+            <h4 class="font-bold text-slate-900">Written by Elena Rostova, CFA</h4>
+            <p class="text-xs text-indigo-700 font-semibold mb-2">Lead Blockchain Strategist & Quantitative Researcher</p>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              Elena covers digital asset portfolio accounting, institutional tax frameworks, and regulatory compliance standards across global markets.
+            </p>
+          </div>
+        </div>
+      </article>
+
+      <aside class="lg:col-span-4 space-y-8">
+        <div class="newsletter-container bg-gradient-to-br from-indigo-900 to-slate-900 text-white p-6 rounded-2xl border border-indigo-800 shadow-xl">
+          <span class="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-bold bg-indigo-400/20 text-indigo-300 border border-indigo-400/30 uppercase tracking-widest mb-3">Institutional Briefing</span>
+          <h3 class="text-lg font-black leading-tight mb-2">Weekly Crypto Intelligence</h3>
+          <p class="text-xs text-indigo-200 mb-4 leading-relaxed">
+            Download our 2026 Year-End Crypto Tax Loss Harvesting & 1099-DA Reconciliation Worksheet.
+          </p>
+          <form class="newsletter-form space-y-3" action="https://formspree.io/f/crypto-briefing" method="POST">
+            <input type="email" name="email" required placeholder="Enter institutional email..." class="w-full px-4 py-2.5 rounded-lg text-xs bg-slate-800/80 border border-indigo-700 text-white placeholder-indigo-300 focus:outline-none focus:ring-2 focus:ring-indigo-400">
+            <button type="submit" class="w-full py-2.5 px-4 rounded-lg text-xs font-bold bg-cyan-400 text-slate-950 hover:bg-cyan-300 transition shadow">
+              Download Tax Worksheet
+            </button>
+          </form>
+          <p class="text-[10px] text-indigo-300/70 mt-2 text-center">Zero spam. Tax research. Unsubscribe anytime.</p>
+        </div>
+
+        <div class="adsense-slot" style="min-height: 250px;">
+          <span class="adsense-label">Advertisement</span>
+          <ins class="adsbygoogle"
+               style="display:block"
+               data-ad-client="ca-pub-9768000594017343"
+               data-ad-slot="3456789018"
+               data-ad-format="auto"
+               data-full-width-responsive="true"></ins>
+        </div>
+
+        <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
+          <h3 class="text-xs font-extrabold uppercase tracking-widest text-slate-400 mb-4">Related Research</h3>
+          <ul class="space-y-4">
+            <li>
+              <a href="institutional-crypto-custody-etfs-and-asset-allocation.html" class="group block">
+                <span class="text-xs font-bold text-slate-900 group-hover:text-indigo-600 transition line-clamp-2">Spot Crypto ETFs & Institutional Asset Allocation</span>
+                <span class="text-[10px] text-slate-400 mt-1 block">ETFs & Allocation • 13 min</span>
+              </a>
+            </li>
+            <li>
+              <a href="hardware-wallets-cold-storage-security-guide.html" class="group block">
+                <span class="text-xs font-bold text-slate-900 group-hover:text-indigo-600 transition line-clamp-2">Ultimate Cold Storage Security Guide: Hardware Wallets vs. Multi-Sig</span>
+                <span class="text-[10px] text-slate-400 mt-1 block">Custody • 14 min</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-slate-950 text-slate-400 text-sm border-t border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div>
+          <span class="text-lg font-extrabold text-white block">Crypto Asset Journal</span>
+          <p class="text-xs text-slate-400 mt-2 leading-relaxed">
+            Independent institutional research on digital asset allocation, blockchain protocol mechanics, and cryptographic cold storage security.
+          </p>
+        </div>
+        <div>
+          <span class="text-xs font-bold text-slate-200 uppercase tracking-wider block mb-3">Topic Pillars</span>
+          <ul class="space-y-2 text-xs">
+            <li><a href="../index.html?cat=bitcoin" class="hover:text-white transition">Bitcoin & Macro Valuation</a></li>
+            <li><a href="../index.html?cat=defi" class="hover:text-white transition">Decentralized Finance (DeFi)</a></li>
+            <li><a href="../index.html?cat=layer2" class="hover:text-white transition">Layer 2 Scaling & Rollups</a></li>
+            <li><a href="../index.html?cat=security" class="hover:text-white transition">Hardware Wallets & Custody</a></li>
+          </ul>
+        </div>
+        <div>
+          <span class="text-xs font-bold text-slate-200 uppercase tracking-wider block mb-3">Editorial & Standards</span>
+          <ul class="space-y-2 text-xs">
+            <li><a href="../about.html" class="hover:text-white transition">About Our Research Desk</a></li>
+            <li><a href="../contact.html" class="hover:text-white transition">Contact & Corrections</a></li>
+            <li><a href="../disclaimer.html" class="hover:text-white transition">Financial Risk Disclaimer</a></li>
+          </ul>
+        </div>
+        <div>
+          <span class="text-xs font-bold text-slate-200 uppercase tracking-wider block mb-3">Legal & Governance</span>
+          <ul class="space-y-2 text-xs">
+            <li><a href="../privacy.html" class="hover:text-white transition">Privacy Policy (GDPR/CCPA)</a></li>
+            <li><a href="../terms.html" class="hover:text-white transition">Terms of Service</a></li>
+            <li><a href="../sitemap.xml" class="hover:text-white transition">XML Sitemap</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="mt-8 pt-6 border-t border-slate-800 text-xs text-slate-500 text-center">
+        <p>&copy; 2026 Crypto Asset Journal. All rights reserved. Content is for educational and informational purposes only and does not constitute financial or investment advice.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>
+
